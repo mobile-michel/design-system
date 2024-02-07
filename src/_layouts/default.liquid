@@ -1,0 +1,14 @@
+---
+layout: base
+css: style.css
+---
+{% include 'header' %}
+<main>
+    {% include 'aside' %}
+    <section>
+        <h1>{{ title }}</h1>
+        <p>{{ description }}</p>
+        {{ content }}
+    </section>
+</main>
+{% include 'footer' %}

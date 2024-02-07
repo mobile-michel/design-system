@@ -1,0 +1,22 @@
+@if $layout == full {
+    main, footer {
+        width: 100%;
+    }
+}
+
+@if $layout == third {
+    main {
+        display: flex;
+    }
+    aside {
+        width: 33.3333%;
+        margin: 1em;
+    }
+}
+
+@if $layout == half {
+    main, footer {
+        width: 50%;
+        margin: 0 auto;
+    }
+}

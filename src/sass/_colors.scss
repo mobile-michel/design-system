@@ -1,0 +1,27 @@
+$primary: null;
+$secondary: null;
+$tertiary: null;
+$quaternary: null;
+
+@if $colorScheme == triadic {
+    $primary: hsl($hue, $saturation, $lightness);
+    $secondary: hsl($hue + 120, $saturation, $lightness);
+    $tertiary: hsl($hue + 240, $saturation, $lightness);
+}
+@else if $colorScheme == complementary {
+    $primary: hsl($hue, $saturation, $lightness);
+    $secondary: hsl($hue + 180, $saturation, $lightness);
+    $tertiary: hsl($hue + 240, $saturation, $lightness);
+}
+@else if $colorScheme == monochromatic {
+    $primary: hsl($hue, $saturation - 40%, $lightness);
+    $secondary: hsl($hue + 180, $saturation - 20%, $lightness);
+    $tertiary: hsl($hue + 240, $saturation - 40%, $lightness - 40%);
+    $quaternary: hsl($hue + 270, $saturation - 40%, $lightness + 40%);
+}
+@else if $colorScheme == tetradic {
+    $primary: hsl($hue, $saturation, $lightness);
+    $secondary: hsl($hue + 90, $saturation, $lightness);
+    $tertiary: hsl($hue + 180, $saturation, $lightness);
+    $quaternary: hsl($hue + 270, $saturation, $lightness);
+}

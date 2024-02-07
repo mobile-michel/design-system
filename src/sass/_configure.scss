@@ -1,0 +1,19 @@
+// Color scheme:
+// monochromatic, complementary, triadic, tetradic
+$colorScheme: triadic;
+
+// Primary color:
+// 0 = red, 60 = yellow, 120 = green, 180 = cyan, 240 = blue, 300 = magenta
+$hue: 300;
+
+// Saturation:
+// 0% = gray, 100% = full color
+$saturation: 50%;
+
+// Lightness:
+// 0% = black, 100% = white
+$lightness: 50%;
+
+// Layout:
+// full, third, half
+$layout: half;
